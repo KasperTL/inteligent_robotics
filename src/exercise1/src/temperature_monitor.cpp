@@ -1,4 +1,3 @@
-
 #include <functional>
 #include <memory>
 
@@ -19,7 +18,7 @@ public:
 private:
     void subscriber_temperature(const std_msgs::msg::Float64::SharedPtr msg)
     {
-        if (msg->data
+        if (msg->data > 25.0)
         {
             RCLCPP_WARN(this->get_logger(), "Temperature is above 25 degrees: '%.2f'", msg->data);
         }

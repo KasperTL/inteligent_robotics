@@ -1,0 +1,13 @@
+
+
+geometry_msgs/Point current_position
+
+geometry_msgs/Point target_position #current and target position in the same frame of reference in meters
+
+float32 distance_tolerance  # Tolerance must be non-negative
+
+---
+
+float32 distance_to_target
+
+bool is_target_reached
