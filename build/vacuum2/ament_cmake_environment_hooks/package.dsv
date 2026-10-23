@@ -1,0 +1,4 @@
+source;share/vacuum2/local_setup.bash
+source;share/vacuum2/local_setup.dsv
+source;share/vacuum2/local_setup.sh
+source;share/vacuum2/local_setup.zsh

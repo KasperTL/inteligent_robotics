@@ -1,0 +1,47 @@
+[0.024s] Invoking command in '/ws/build/exercise1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ws/build/exercise1 -- -j8 -l8
+[0.064s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.361s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.372s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.399s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.412s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.430s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.447s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.553s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.555s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.635s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.741s] -- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.765s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.876s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.876s] -- Configured cppcheck include dirs: 
+[0.876s] -- Configured cppcheck exclude dirs and/or files: 
+[0.877s] -- Added test 'lint_cmake' to check CMake code style
+[0.878s] -- Added test 'uncrustify' to check C / C++ code style
+[0.878s] -- Configured uncrustify additional arguments: 
+[0.879s] -- Added test 'xmllint' to check XML markup files
+[0.880s] -- Configuring done (0.8s)
+[0.896s] -- Generating done (0.0s)
+[0.904s] -- Build files have been written to: /ws/build/exercise1
+[0.962s] [ 50%] Built target temperature_sensor_node
+[0.965s] [100%] Built target temperature_monitor_node
+[0.978s] Invoked command in '/ws/build/exercise1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ws/build/exercise1 -- -j8 -l8
+[0.979s] Invoking command in '/ws/build/exercise1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ws/build/exercise1
+[0.987s] -- Install configuration: ""
+[0.988s] -- Execute custom install script
+[0.988s] -- Symlinking: /ws/install/exercise1/lib/exercise1/temperature_sensor_node
+[0.998s] -- Symlinking: /ws/install/exercise1/lib/exercise1/temperature_monitor_node
+[1.010s] -- Up-to-date symlink: /ws/install/exercise1/share/ament_index/resource_index/package_run_dependencies/exercise1
+[1.010s] -- Up-to-date symlink: /ws/install/exercise1/share/ament_index/resource_index/parent_prefix_path/exercise1
+[1.011s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/environment/ament_prefix_path.sh
+[1.011s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/environment/ament_prefix_path.dsv
+[1.011s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/environment/path.sh
+[1.011s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/environment/path.dsv
+[1.011s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/local_setup.bash
+[1.011s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/local_setup.sh
+[1.011s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/local_setup.zsh
+[1.012s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/local_setup.dsv
+[1.012s] -- Symlinking: /ws/install/exercise1/share/exercise1/package.dsv
+[1.023s] -- Up-to-date symlink: /ws/install/exercise1/share/ament_index/resource_index/packages/exercise1
+[1.023s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/cmake/exercise1Config.cmake
+[1.024s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/cmake/exercise1Config-version.cmake
+[1.024s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/package.xml
+[1.026s] Invoked command in '/ws/build/exercise1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ws/build/exercise1

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "intelligent_robotics_msgs__rs",
+		"source" : "/ws/build/intelligent_robotics_msgs/intelligent_robotics_msgs__rs"
+	}
+}

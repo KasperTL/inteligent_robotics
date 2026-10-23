@@ -1,0 +1,1 @@
+/ws/build/intelligent_robotics_msgs/rosidl_generator_c/intelligent_robotics_msgs/msg/vacuum_cleaner_status.h

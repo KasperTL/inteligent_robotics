@@ -1,0 +1,1 @@
+/ws/build/vacuum2/ament_cmake_core/vacuum2Config-version.cmake

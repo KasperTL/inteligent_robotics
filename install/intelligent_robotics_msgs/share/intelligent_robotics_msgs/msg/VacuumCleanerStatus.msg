@@ -1,0 +1,1 @@
+/ws/src/intelligent_robotics_msgs/msg/VacuumCleanerStatus.msg

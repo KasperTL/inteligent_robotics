@@ -1,0 +1,6 @@
+{
+  "package_name": "intelligent_robotics_msgs",
+  "non_idl_tuples": [
+    "/ws/src/intelligent_robotics_msgs:msg/VacuumCleanerStatus.msg"
+  ]
+}

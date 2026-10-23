@@ -1,0 +1,14 @@
+[0.023s] Invoking command in '/ws/build/exercise1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ws/build/exercise1 -- -j8 -l8
+[0.111s] [ 50%] Built target temperature_sensor_node
+[0.111s] [ 75%] [32mBuilding CXX object CMakeFiles/temperature_monitor_node.dir/src/temperature_monitor.cpp.o[0m
+[3.645s] [01m[K/ws/src/exercise1/src/temperature_monitor.cpp:[m[K In member function ‘[01m[Kvoid TemperatureMonitorNode::[01;32m[Ksubscriber_temperature[m[K(std_msgs::msg::Float64_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.645s] [01m[K/ws/src/exercise1/src/temperature_monitor.cpp:22:12:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Kmsg[m[K’
+[3.646s]    22 |         if [01;31m[Kmsg[m[K->data > 25.0
+[3.646s]       |            [01;31m[K^~~[m[K
+[3.646s] [01m[K/ws/src/exercise1/src/temperature_monitor.cpp:26:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+[3.646s]    26 |         [01;31m[Kelse[m[K
+[3.646s]       |         [01;31m[K^~~~[m[K
+[6.656s] gmake[2]: *** [CMakeFiles/temperature_monitor_node.dir/build.make:76: CMakeFiles/temperature_monitor_node.dir/src/temperature_monitor.cpp.o] Error 1
+[6.657s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/temperature_monitor_node.dir/all] Error 2
+[6.657s] gmake: *** [Makefile:146: all] Error 2
+[6.661s] Invoked command in '/ws/build/exercise1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ws/build/exercise1 -- -j8 -l8

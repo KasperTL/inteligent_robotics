@@ -1,0 +1,17 @@
+/ws/install/vacuum1/lib/vacuum1/charging_station_node
+/ws/install/vacuum1/lib/vacuum1/vacuum_cleaner_node
+/ws/install/vacuum1/share/ament_index/resource_index/package_run_dependencies/vacuum1
+/ws/install/vacuum1/share/ament_index/resource_index/parent_prefix_path/vacuum1
+/ws/install/vacuum1/share/vacuum1/environment/ament_prefix_path.sh
+/ws/install/vacuum1/share/vacuum1/environment/ament_prefix_path.dsv
+/ws/install/vacuum1/share/vacuum1/environment/path.sh
+/ws/install/vacuum1/share/vacuum1/environment/path.dsv
+/ws/install/vacuum1/share/vacuum1/local_setup.bash
+/ws/install/vacuum1/share/vacuum1/local_setup.sh
+/ws/install/vacuum1/share/vacuum1/local_setup.zsh
+/ws/install/vacuum1/share/vacuum1/local_setup.dsv
+/ws/install/vacuum1/share/vacuum1/package.dsv
+/ws/install/vacuum1/share/ament_index/resource_index/packages/vacuum1
+/ws/install/vacuum1/share/vacuum1/cmake/vacuum1Config.cmake
+/ws/install/vacuum1/share/vacuum1/cmake/vacuum1Config-version.cmake
+/ws/install/vacuum1/share/vacuum1/package.xml

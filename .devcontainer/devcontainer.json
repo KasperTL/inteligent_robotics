@@ -1,0 +1,23 @@
+{
+  "name": "ros2-jazzy",
+  "build": {
+    "dockerfile": "../DOCKERFILE",
+    "context": ".."
+  },
+  "runArgs": ["--network=host", "--ipc=host"],
+  "workspaceFolder": "/ws",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/ws,type=bind",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools-extension-pack",
+        "llvm-vs-code-extensions.vscode-clangd",
+        "ms-python.python",
+        "ms-iot.vscode-ros"
+      ],
+      "settings": {
+        "clangd.arguments": ["--compile-commands-dir=/ws/build"]
+      }
+    }
+  }
+}

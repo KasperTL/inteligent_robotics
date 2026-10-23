@@ -1,0 +1,16 @@
+build/
+install/
+log/
+.git/
+.github/
+.vscode/
+.devcontainer/
+**/__pycache__/
+**/*.pyc
+.pytest_cache/
+*.swp
+*~
+.DS_Store
+compose.yaml
+Dockerfile
+README.md

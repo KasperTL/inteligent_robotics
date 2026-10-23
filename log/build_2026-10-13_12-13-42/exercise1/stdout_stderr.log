@@ -1,0 +1,19 @@
+[ 50%] Built target temperature_sensor_node
+[100%] Built target temperature_monitor_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /ws/install/exercise1/share/ament_index/resource_index/package_run_dependencies/exercise1
+-- Up-to-date symlink: /ws/install/exercise1/share/ament_index/resource_index/parent_prefix_path/exercise1
+-- Up-to-date symlink: /ws/install/exercise1/share/exercise1/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /ws/install/exercise1/share/exercise1/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /ws/install/exercise1/share/exercise1/environment/path.sh
+-- Up-to-date symlink: /ws/install/exercise1/share/exercise1/environment/path.dsv
+-- Up-to-date symlink: /ws/install/exercise1/share/exercise1/local_setup.bash
+-- Up-to-date symlink: /ws/install/exercise1/share/exercise1/local_setup.sh
+-- Up-to-date symlink: /ws/install/exercise1/share/exercise1/local_setup.zsh
+-- Up-to-date symlink: /ws/install/exercise1/share/exercise1/local_setup.dsv
+-- Symlinking: /ws/install/exercise1/share/exercise1/package.dsv
+-- Up-to-date symlink: /ws/install/exercise1/share/ament_index/resource_index/packages/exercise1
+-- Up-to-date symlink: /ws/install/exercise1/share/exercise1/cmake/exercise1Config.cmake
+-- Up-to-date symlink: /ws/install/exercise1/share/exercise1/cmake/exercise1Config-version.cmake
+-- Up-to-date symlink: /ws/install/exercise1/share/exercise1/package.xml

@@ -1,0 +1,529 @@
+[0.000000] (-) TimerEvent: {}
+[0.000136] (intelligent_robotics_msgs) JobQueued: {'identifier': 'intelligent_robotics_msgs', 'dependencies': OrderedDict()}
+[0.000194] (vacuum2) JobQueued: {'identifier': 'vacuum2', 'dependencies': OrderedDict()}
+[0.000219] (vacuum1) JobQueued: {'identifier': 'vacuum1', 'dependencies': OrderedDict({'intelligent_robotics_msgs': '/ws/install/intelligent_robotics_msgs'})}
+[0.000906] (intelligent_robotics_msgs) JobStarted: {'identifier': 'intelligent_robotics_msgs'}
+[0.010111] (vacuum2) JobStarted: {'identifier': 'vacuum2'}
+[0.014538] (intelligent_robotics_msgs) JobProgress: {'identifier': 'intelligent_robotics_msgs', 'progress': 'cmake'}
+[0.015493] (intelligent_robotics_msgs) Command: {'cmd': ['/usr/bin/cmake', '/ws/src/intelligent_robotics_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/ws/install/intelligent_robotics_msgs'], 'cwd': '/ws/build/intelligent_robotics_msgs', 'env': OrderedDict({'HOSTNAME': 'kasper-ThinkPad-T480s', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root', 'TERM_PROGRAM_VERSION': '1.108.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-9897f699-1c62-4676-8f61-2483c01b8ca6.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'WAYLAND_DISPLAY': 'vscode-wayland-3e56244b-52ad-49ac-9dd7-9429404528c6.sock', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/tmp/user/0', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/bb1711ff82dc5e17e4af6b5ee9b68aa5/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/user/0/vscode-git-097dc89b52.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X0', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/ws/build/intelligent_robotics_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.020929] (vacuum2) JobProgress: {'identifier': 'vacuum2', 'progress': 'cmake'}
+[0.021975] (vacuum2) Command: {'cmd': ['/usr/bin/cmake', '/ws/src/vacuum2', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/ws/install/vacuum2'], 'cwd': '/ws/build/vacuum2', 'env': OrderedDict({'HOSTNAME': 'kasper-ThinkPad-T480s', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root', 'TERM_PROGRAM_VERSION': '1.108.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-9897f699-1c62-4676-8f61-2483c01b8ca6.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'WAYLAND_DISPLAY': 'vscode-wayland-3e56244b-52ad-49ac-9dd7-9429404528c6.sock', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/tmp/user/0', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/bb1711ff82dc5e17e4af6b5ee9b68aa5/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/user/0/vscode-git-097dc89b52.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X0', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/ws/build/vacuum2', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.099733] (-) TimerEvent: {}
+[0.157113] (vacuum2) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.160265] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.199833] (-) TimerEvent: {}
+[0.272877] (vacuum2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.273648] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.297339] (vacuum2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.297534] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299920] (-) TimerEvent: {}
+[0.400216] (-) TimerEvent: {}
+[0.410918] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.414133] (vacuum2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.433085] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.433563] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.434592] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.435014] (vacuum2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.435472] (vacuum2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.436364] (vacuum2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.447167] (vacuum2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.447450] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500329] (-) TimerEvent: {}
+[0.561120] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.561416] (vacuum2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.577088] (vacuum2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.577477] (vacuum2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.577712] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.578059] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.578293] (vacuum2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.578847] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.582653] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.582868] (vacuum2) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.600449] (-) TimerEvent: {}
+[0.700674] (-) TimerEvent: {}
+[0.739638] (vacuum2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.742602] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.800765] (-) TimerEvent: {}
+[0.841676] (vacuum2) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.842057] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.886189] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.886451] (vacuum2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[0.891926] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.900862] (-) TimerEvent: {}
+[0.950619] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.000955] (-) TimerEvent: {}
+[1.010745] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.028599] (vacuum2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.028813] (vacuum2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.028903] (vacuum2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.030663] (vacuum2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.033443] (vacuum2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.033615] (vacuum2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.034866] (vacuum2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.038471] (vacuum2) StdoutLine: {'line': b'-- Configuring done (1.0s)\n'}
+[1.044890] (vacuum2) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.047903] (vacuum2) StdoutLine: {'line': b'-- Build files have been written to: /ws/build/vacuum2\n'}
+[1.054241] (vacuum2) CommandEnded: {'returncode': 0}
+[1.054760] (vacuum2) JobProgress: {'identifier': 'vacuum2', 'progress': 'build'}
+[1.055573] (vacuum2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws/build/vacuum2', '--', '-j8', '-l8'], 'cwd': '/ws/build/vacuum2', 'env': OrderedDict({'HOSTNAME': 'kasper-ThinkPad-T480s', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root', 'TERM_PROGRAM_VERSION': '1.108.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-9897f699-1c62-4676-8f61-2483c01b8ca6.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'WAYLAND_DISPLAY': 'vscode-wayland-3e56244b-52ad-49ac-9dd7-9429404528c6.sock', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/tmp/user/0', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/bb1711ff82dc5e17e4af6b5ee9b68aa5/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/user/0/vscode-git-097dc89b52.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X0', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/ws/build/vacuum2', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[1.101016] (vacuum2) CommandEnded: {'returncode': 0}
+[1.101501] (-) TimerEvent: {}
+[1.101978] (vacuum2) JobProgress: {'identifier': 'vacuum2', 'progress': 'install'}
+[1.113766] (vacuum2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ws/build/vacuum2'], 'cwd': '/ws/build/vacuum2', 'env': OrderedDict({'HOSTNAME': 'kasper-ThinkPad-T480s', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root', 'TERM_PROGRAM_VERSION': '1.108.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-9897f699-1c62-4676-8f61-2483c01b8ca6.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'WAYLAND_DISPLAY': 'vscode-wayland-3e56244b-52ad-49ac-9dd7-9429404528c6.sock', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/tmp/user/0', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/bb1711ff82dc5e17e4af6b5ee9b68aa5/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/user/0/vscode-git-097dc89b52.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X0', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/ws/build/vacuum2', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[1.123267] (vacuum2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.123842] (vacuum2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.124514] (vacuum2) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum2/share/ament_index/resource_index/package_run_dependencies/vacuum2\n'}
+[1.135774] (vacuum2) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum2/share/ament_index/resource_index/parent_prefix_path/vacuum2\n'}
+[1.146159] (vacuum2) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum2/share/vacuum2/environment/ament_prefix_path.sh\n'}
+[1.156392] (vacuum2) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum2/share/vacuum2/environment/ament_prefix_path.dsv\n'}
+[1.167413] (vacuum2) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum2/share/vacuum2/environment/path.sh\n'}
+[1.180244] (vacuum2) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum2/share/vacuum2/environment/path.dsv\n'}
+[1.192330] (vacuum2) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum2/share/vacuum2/local_setup.bash\n'}
+[1.201606] (-) TimerEvent: {}
+[1.203369] (vacuum2) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum2/share/vacuum2/local_setup.sh\n'}
+[1.214184] (vacuum2) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum2/share/vacuum2/local_setup.zsh\n'}
+[1.225089] (vacuum2) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum2/share/vacuum2/local_setup.dsv\n'}
+[1.236972] (vacuum2) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum2/share/vacuum2/package.dsv\n'}
+[1.247934] (vacuum2) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum2/share/ament_index/resource_index/packages/vacuum2\n'}
+[1.258394] (vacuum2) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum2/share/vacuum2/cmake/vacuum2Config.cmake\n'}
+[1.269722] (vacuum2) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum2/share/vacuum2/cmake/vacuum2Config-version.cmake\n'}
+[1.280524] (vacuum2) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum2/share/vacuum2/package.xml\n'}
+[1.295559] (vacuum2) CommandEnded: {'returncode': 0}
+[1.301731] (-) TimerEvent: {}
+[1.327131] (vacuum2) JobEnded: {'identifier': 'vacuum2', 'rc': 0}
+[1.401844] (-) TimerEvent: {}
+[1.502115] (-) TimerEvent: {}
+[1.602322] (-) TimerEvent: {}
+[1.702531] (-) TimerEvent: {}
+[1.744550] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[1.802662] (-) TimerEvent: {}
+[1.902916] (-) TimerEvent: {}
+[2.003173] (-) TimerEvent: {}
+[2.103445] (-) TimerEvent: {}
+[2.203746] (-) TimerEvent: {}
+[2.204022] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.303870] (-) TimerEvent: {}
+[2.404157] (-) TimerEvent: {}
+[2.504399] (-) TimerEvent: {}
+[2.604658] (-) TimerEvent: {}
+[2.704923] (-) TimerEvent: {}
+[2.723213] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.725932] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[2.805010] (-) TimerEvent: {}
+[2.853309] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[2.905149] (-) TimerEvent: {}
+[3.005395] (-) TimerEvent: {}
+[3.105643] (-) TimerEvent: {}
+[3.205887] (-) TimerEvent: {}
+[3.306129] (-) TimerEvent: {}
+[3.365976] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[3.406245] (-) TimerEvent: {}
+[3.449907] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.468358] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Configuring done (3.4s)\n'}
+[3.506335] (-) TimerEvent: {}
+[3.512426] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[3.533467] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Build files have been written to: /ws/build/intelligent_robotics_msgs\n'}
+[3.541447] (intelligent_robotics_msgs) CommandEnded: {'returncode': 0}
+[3.542101] (intelligent_robotics_msgs) JobProgress: {'identifier': 'intelligent_robotics_msgs', 'progress': 'build'}
+[3.542133] (intelligent_robotics_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws/build/intelligent_robotics_msgs', '--', '-j8', '-l8'], 'cwd': '/ws/build/intelligent_robotics_msgs', 'env': OrderedDict({'HOSTNAME': 'kasper-ThinkPad-T480s', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root', 'TERM_PROGRAM_VERSION': '1.108.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-9897f699-1c62-4676-8f61-2483c01b8ca6.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'WAYLAND_DISPLAY': 'vscode-wayland-3e56244b-52ad-49ac-9dd7-9429404528c6.sock', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/tmp/user/0', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/bb1711ff82dc5e17e4af6b5ee9b68aa5/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/user/0/vscode-git-097dc89b52.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X0', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/ws/build/intelligent_robotics_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[3.597239] (intelligent_robotics_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[3.597536] (intelligent_robotics_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[3.606186] (intelligent_robotics_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_symlink_intelligent_robotics_msgs\n'}
+[3.606416] (-) TimerEvent: {}
+[3.706646] (-) TimerEvent: {}
+[3.806917] (-) TimerEvent: {}
+[3.858018] (intelligent_robotics_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[3.859078] (intelligent_robotics_msgs) StdoutLine: {'line': b'creating intelligent_robotics_msgs.egg-info\n'}
+[3.861291] (intelligent_robotics_msgs) StdoutLine: {'line': b'[  5%] Built target intelligent_robotics_msgs__rosidl_generator_type_description\n'}
+[3.874270] (intelligent_robotics_msgs) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.877580] (intelligent_robotics_msgs) StdoutLine: {'line': b'writing intelligent_robotics_msgs.egg-info/PKG-INFO\n'}
+[3.877887] (intelligent_robotics_msgs) StdoutLine: {'line': b'writing dependency_links to intelligent_robotics_msgs.egg-info/dependency_links.txt\n'}
+[3.878267] (intelligent_robotics_msgs) StdoutLine: {'line': b'writing top-level names to intelligent_robotics_msgs.egg-info/top_level.txt\n'}
+[3.878505] (intelligent_robotics_msgs) StdoutLine: {'line': b"writing manifest file 'intelligent_robotics_msgs.egg-info/SOURCES.txt'\n"}
+[3.890486] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 11%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.894279] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 11%] Built target intelligent_robotics_msgs__rs\n'}
+[3.907016] (-) TimerEvent: {}
+[3.929488] (intelligent_robotics_msgs) StdoutLine: {'line': b"reading manifest file 'intelligent_robotics_msgs.egg-info/SOURCES.txt'\n"}
+[3.930369] (intelligent_robotics_msgs) StdoutLine: {'line': b"writing manifest file 'intelligent_robotics_msgs.egg-info/SOURCES.txt'\n"}
+[3.964825] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 11%] Built target ament_cmake_python_build_intelligent_robotics_msgs_egg\n'}
+[4.007164] (-) TimerEvent: {}
+[4.107423] (-) TimerEvent: {}
+[4.168026] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 11%] Built target intelligent_robotics_msgs__cpp\n'}
+[4.191687] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/intelligent_robotics_msgs__rosidl_generator_c.dir/rosidl_generator_c/intelligent_robotics_msgs/msg/detail/vacuum_cleaner_status__functions.c.o\x1b[0m\n'}
+[4.192031] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/intelligent_robotics_msgs__rosidl_generator_c.dir/rosidl_generator_c/intelligent_robotics_msgs/msg/detail/vacuum_cleaner_status__description.c.o\x1b[0m\n'}
+[4.192252] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/intelligent_robotics_msgs__rosidl_generator_c.dir/rosidl_generator_c/intelligent_robotics_msgs/msg/detail/vacuum_cleaner_status__type_support.c.o\x1b[0m\n'}
+[4.207530] (-) TimerEvent: {}
+[4.266845] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libintelligent_robotics_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[4.307668] (-) TimerEvent: {}
+[4.311216] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 22%] Built target intelligent_robotics_msgs__rosidl_generator_c\n'}
+[4.328373] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.328741] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[4.329610] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.331614] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.331808] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 37%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.331931] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 40%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.407781] (-) TimerEvent: {}
+[4.508058] (-) TimerEvent: {}
+[4.608349] (-) TimerEvent: {}
+[4.619695] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/intelligent_robotics_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/intelligent_robotics_msgs/msg/vacuum_cleaner_status__type_support.cpp.o\x1b[0m\n'}
+[4.678330] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/intelligent_robotics_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/intelligent_robotics_msgs/msg/detail/vacuum_cleaner_status__type_support_c.cpp.o\x1b[0m\n'}
+[4.691251] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libintelligent_robotics_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.708444] (-) TimerEvent: {}
+[4.750933] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 48%] Built target intelligent_robotics_msgs__rosidl_typesupport_c\n'}
+[4.776803] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/intelligent_robotics_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/intelligent_robotics_msgs/msg/vacuum_cleaner_status__type_support.cpp.o\x1b[0m\n'}
+[4.796912] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/intelligent_robotics_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/intelligent_robotics_msgs/msg/detail/vacuum_cleaner_status__type_support.cpp.o\x1b[0m\n'}
+[4.804357] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/intelligent_robotics_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/intelligent_robotics_msgs/msg/detail/vacuum_cleaner_status__type_support.c.o\x1b[0m\n'}
+[4.808547] (-) TimerEvent: {}
+[4.828630] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/intelligent_robotics_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/intelligent_robotics_msgs/msg/detail/dds_fastrtps/vacuum_cleaner_status__type_support.cpp.o\x1b[0m\n'}
+[4.855350] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking C shared library libintelligent_robotics_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.894225] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 62%] Built target intelligent_robotics_msgs__rosidl_typesupport_introspection_c\n'}
+[4.908652] (-) TimerEvent: {}
+[5.008948] (-) TimerEvent: {}
+[5.109215] (-) TimerEvent: {}
+[5.209522] (-) TimerEvent: {}
+[5.283726] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libintelligent_robotics_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[5.309641] (-) TimerEvent: {}
+[5.330206] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libintelligent_robotics_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[5.360269] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 68%] Built target intelligent_robotics_msgs__rosidl_typesupport_cpp\n'}
+[5.409780] (-) TimerEvent: {}
+[5.427567] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 68%] Built target intelligent_robotics_msgs__rosidl_typesupport_introspection_cpp\n'}
+[5.462608] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libintelligent_robotics_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.509946] (-) TimerEvent: {}
+[5.557894] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libintelligent_robotics_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[5.559131] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 74%] Built target intelligent_robotics_msgs__rosidl_typesupport_fastrtps_c\n'}
+[5.610040] (-) TimerEvent: {}
+[5.652433] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 74%] Built target intelligent_robotics_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[5.678579] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 74%] Built target intelligent_robotics_msgs\n'}
+[5.708909] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 77%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.710119] (-) TimerEvent: {}
+[5.810355] (-) TimerEvent: {}
+[5.910605] (-) TimerEvent: {}
+[6.010759] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 77%] Built target intelligent_robotics_msgs__py\n'}
+[6.010932] (-) TimerEvent: {}
+[6.034990] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/intelligent_robotics_msgs__rosidl_generator_py.dir/rosidl_generator_py/intelligent_robotics_msgs/msg/_vacuum_cleaner_status_s.c.o\x1b[0m\n'}
+[6.111077] (-) TimerEvent: {}
+[6.198617] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking C shared library libintelligent_robotics_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[6.211187] (-) TimerEvent: {}
+[6.249724] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 82%] Built target intelligent_robotics_msgs__rosidl_generator_py\n'}
+[6.273546] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/intelligent_robotics_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/intelligent_robotics_msgs/_intelligent_robotics_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[6.273866] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/intelligent_robotics_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/intelligent_robotics_msgs/_intelligent_robotics_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.274075] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/intelligent_robotics_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/intelligent_robotics_msgs/_intelligent_robotics_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.311302] (-) TimerEvent: {}
+[6.399297] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/intelligent_robotics_msgs/intelligent_robotics_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[6.399583] (intelligent_robotics_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/intelligent_robotics_msgs/intelligent_robotics_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.404258] (intelligent_robotics_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/intelligent_robotics_msgs/intelligent_robotics_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.411400] (-) TimerEvent: {}
+[6.439333] (intelligent_robotics_msgs) StdoutLine: {'line': b'[100%] Built target intelligent_robotics_msgs_s__rosidl_typesupport_introspection_c\n'}
+[6.439637] (intelligent_robotics_msgs) StdoutLine: {'line': b'[100%] Built target intelligent_robotics_msgs_s__rosidl_typesupport_c\n'}
+[6.444967] (intelligent_robotics_msgs) StdoutLine: {'line': b'[100%] Built target intelligent_robotics_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[6.460161] (intelligent_robotics_msgs) CommandEnded: {'returncode': 0}
+[6.460856] (intelligent_robotics_msgs) JobProgress: {'identifier': 'intelligent_robotics_msgs', 'progress': 'install'}
+[6.461388] (intelligent_robotics_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ws/build/intelligent_robotics_msgs'], 'cwd': '/ws/build/intelligent_robotics_msgs', 'env': OrderedDict({'HOSTNAME': 'kasper-ThinkPad-T480s', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root', 'TERM_PROGRAM_VERSION': '1.108.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-9897f699-1c62-4676-8f61-2483c01b8ca6.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'WAYLAND_DISPLAY': 'vscode-wayland-3e56244b-52ad-49ac-9dd7-9429404528c6.sock', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/tmp/user/0', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/bb1711ff82dc5e17e4af6b5ee9b68aa5/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/user/0/vscode-git-097dc89b52.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X0', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/ws/build/intelligent_robotics_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[6.470619] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.471283] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[6.471683] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/ament_index/resource_index/rosidl_interfaces/intelligent_robotics_msgs\n'}
+[6.482116] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/msg/VacuumCleanerStatus.json\n'}
+[6.492802] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/include/intelligent_robotics_msgs/intelligent_robotics_msgs/msg/detail/vacuum_cleaner_status__functions.h\n'}
+[6.502833] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/include/intelligent_robotics_msgs/intelligent_robotics_msgs/msg/detail/vacuum_cleaner_status__struct.h\n'}
+[6.511518] (-) TimerEvent: {}
+[6.513110] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/include/intelligent_robotics_msgs/intelligent_robotics_msgs/msg/detail/vacuum_cleaner_status__type_support.h\n'}
+[6.523778] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/include/intelligent_robotics_msgs/intelligent_robotics_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.534626] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/include/intelligent_robotics_msgs/intelligent_robotics_msgs/msg/vacuum_cleaner_status.h\n'}
+[6.544954] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/environment/library_path.sh\n'}
+[6.555074] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/environment/library_path.dsv\n'}
+[6.565844] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/include/intelligent_robotics_msgs/intelligent_robotics_msgs/msg/detail/vacuum_cleaner_status__rosidl_typesupport_fastrtps_c.h\n'}
+[6.576572] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/include/intelligent_robotics_msgs/intelligent_robotics_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.586868] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/include/intelligent_robotics_msgs/intelligent_robotics_msgs/msg/detail/vacuum_cleaner_status__rosidl_typesupport_introspection_c.h\n'}
+[6.597104] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/include/intelligent_robotics_msgs/intelligent_robotics_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.607803] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/include/intelligent_robotics_msgs/intelligent_robotics_msgs/msg/detail/vacuum_cleaner_status__builder.hpp\n'}
+[6.611622] (-) TimerEvent: {}
+[6.618032] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/include/intelligent_robotics_msgs/intelligent_robotics_msgs/msg/detail/vacuum_cleaner_status__struct.hpp\n'}
+[6.629293] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/include/intelligent_robotics_msgs/intelligent_robotics_msgs/msg/detail/vacuum_cleaner_status__traits.hpp\n'}
+[6.640653] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/include/intelligent_robotics_msgs/intelligent_robotics_msgs/msg/detail/vacuum_cleaner_status__type_support.hpp\n'}
+[6.650991] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/include/intelligent_robotics_msgs/intelligent_robotics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[6.661705] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/include/intelligent_robotics_msgs/intelligent_robotics_msgs/msg/vacuum_cleaner_status.hpp\n'}
+[6.673094] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/include/intelligent_robotics_msgs/intelligent_robotics_msgs/msg/detail/vacuum_cleaner_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.683738] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/include/intelligent_robotics_msgs/intelligent_robotics_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.694198] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/include/intelligent_robotics_msgs/intelligent_robotics_msgs/msg/detail/vacuum_cleaner_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.704366] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/environment/pythonpath.sh\n'}
+[6.711751] (-) TimerEvent: {}
+[6.714575] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/environment/pythonpath.dsv\n'}
+[6.726902] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[6.737807] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[6.748219] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[6.758958] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[6.770322] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs/__init__.py\n'}
+[6.780982] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs/_intelligent_robotics_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[6.791303] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs/_intelligent_robotics_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.801844] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs/_intelligent_robotics_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.811884] (-) TimerEvent: {}
+[6.812263] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs/intelligent_robotics_msgs_s__rosidl_typesupport_c.so\n'}
+[6.823506] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs/intelligent_robotics_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[6.834708] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs/intelligent_robotics_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[6.845171] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs/msg/__init__.py\n'}
+[6.862625] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs/msg/_vacuum_cleaner_status.py\n'}
+[6.872681] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs/msg/_vacuum_cleaner_status_s.c\n'}
+[6.883163] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs/intelligent_robotics_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[6.883596] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs/intelligent_robotics_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[6.884004] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs/intelligent_robotics_msgs_s__rosidl_typesupport_c.so\n'}
+[6.884680] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/rust/Cargo.toml\n'}
+[6.894882] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/rust/build.rs\n'}
+[6.905540] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/rust/src/lib.rs\n'}
+[6.912019] (-) TimerEvent: {}
+[6.917263] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/rust/src/msg.rs\n'}
+[6.928349] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/rust/src/msg/rmw.rs\n'}
+[6.939508] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/msg/VacuumCleanerStatus.idl\n'}
+[6.950526] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/msg/VacuumCleanerStatus.msg\n'}
+[6.960750] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/ament_index/resource_index/package_run_dependencies/intelligent_robotics_msgs\n'}
+[6.971115] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/ament_index/resource_index/parent_prefix_path/intelligent_robotics_msgs\n'}
+[6.981422] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/environment/ament_prefix_path.sh\n'}
+[6.991737] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/environment/ament_prefix_path.dsv\n'}
+[7.002287] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/environment/path.sh\n'}
+[7.012107] (-) TimerEvent: {}
+[7.012464] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/environment/path.dsv\n'}
+[7.023487] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/local_setup.bash\n'}
+[7.034676] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/local_setup.sh\n'}
+[7.045066] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/local_setup.zsh\n'}
+[7.055679] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/local_setup.dsv\n'}
+[7.066337] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/package.dsv\n'}
+[7.077255] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/ament_index/resource_index/packages/intelligent_robotics_msgs\n'}
+[7.087457] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[7.097788] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.107930] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.112230] (-) TimerEvent: {}
+[7.126486] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[7.137553] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[7.148334] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.158706] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[7.169445] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[7.180782] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/intelligent_robotics_msgsConfig.cmake\n'}
+[7.191132] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/intelligent_robotics_msgsConfig-version.cmake\n'}
+[7.201564] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Symlinking: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/package.xml\n'}
+[7.211857] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/lib/libintelligent_robotics_msgs__rosidl_generator_c.so\n'}
+[7.212301] (-) TimerEvent: {}
+[7.212581] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/ws/install/intelligent_robotics_msgs/lib/libintelligent_robotics_msgs__rosidl_generator_c.so" to ""\n'}
+[7.212837] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/lib/libintelligent_robotics_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[7.213550] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/ws/install/intelligent_robotics_msgs/lib/libintelligent_robotics_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[7.213789] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/lib/libintelligent_robotics_msgs__rosidl_typesupport_introspection_c.so\n'}
+[7.214391] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/ws/install/intelligent_robotics_msgs/lib/libintelligent_robotics_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[7.214623] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/lib/libintelligent_robotics_msgs__rosidl_typesupport_c.so\n'}
+[7.215176] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/ws/install/intelligent_robotics_msgs/lib/libintelligent_robotics_msgs__rosidl_typesupport_c.so" to ""\n'}
+[7.215415] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/lib/libintelligent_robotics_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.216117] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/ws/install/intelligent_robotics_msgs/lib/libintelligent_robotics_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[7.216341] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/lib/libintelligent_robotics_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[7.217006] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/ws/install/intelligent_robotics_msgs/lib/libintelligent_robotics_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[7.217172] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/lib/libintelligent_robotics_msgs__rosidl_typesupport_cpp.so\n'}
+[7.217756] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/ws/install/intelligent_robotics_msgs/lib/libintelligent_robotics_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[7.273240] (intelligent_robotics_msgs) StdoutLine: {'line': b"Listing '/ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs'...\n"}
+[7.273407] (intelligent_robotics_msgs) StdoutLine: {'line': b"Compiling '/ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs/__init__.py'...\n"}
+[7.273505] (intelligent_robotics_msgs) StdoutLine: {'line': b"Listing '/ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs/msg'...\n"}
+[7.273659] (intelligent_robotics_msgs) StdoutLine: {'line': b"Compiling '/ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs/msg/__init__.py'...\n"}
+[7.273757] (intelligent_robotics_msgs) StdoutLine: {'line': b"Compiling '/ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages/intelligent_robotics_msgs/msg/_vacuum_cleaner_status.py'...\n"}
+[7.280008] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/lib/libintelligent_robotics_msgs__rosidl_generator_py.so\n'}
+[7.280783] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/ws/install/intelligent_robotics_msgs/lib/libintelligent_robotics_msgs__rosidl_generator_py.so" to ""\n'}
+[7.281008] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/export_intelligent_robotics_msgs__rosidl_generator_cExport.cmake\n'}
+[7.281209] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/export_intelligent_robotics_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[7.281403] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/export_intelligent_robotics_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[7.281608] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/export_intelligent_robotics_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[7.281844] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/intelligent_robotics_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[7.282019] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/intelligent_robotics_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[7.282294] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/intelligent_robotics_msgs__rosidl_typesupport_cExport.cmake\n'}
+[7.282496] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/intelligent_robotics_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[7.282619] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/export_intelligent_robotics_msgs__rosidl_generator_cppExport.cmake\n'}
+[7.282836] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/export_intelligent_robotics_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[7.283010] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/export_intelligent_robotics_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[7.283268] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/intelligent_robotics_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[7.283530] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/intelligent_robotics_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[7.283750] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/intelligent_robotics_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[7.283959] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/intelligent_robotics_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[7.284127] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/export_intelligent_robotics_msgs__rosidl_generator_pyExport.cmake\n'}
+[7.284268] (intelligent_robotics_msgs) StdoutLine: {'line': b'-- Installing: /ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake/export_intelligent_robotics_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[7.287387] (intelligent_robotics_msgs) CommandEnded: {'returncode': 0}
+[7.307359] (intelligent_robotics_msgs) JobEnded: {'identifier': 'intelligent_robotics_msgs', 'rc': 0}
+[7.308175] (vacuum1) JobStarted: {'identifier': 'vacuum1'}
+[7.312384] (-) TimerEvent: {}
+[7.315075] (vacuum1) JobProgress: {'identifier': 'vacuum1', 'progress': 'cmake'}
+[7.315772] (vacuum1) Command: {'cmd': ['/usr/bin/cmake', '/ws/src/vacuum1', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/ws/install/vacuum1'], 'cwd': '/ws/build/vacuum1', 'env': OrderedDict({'HOSTNAME': 'kasper-ThinkPad-T480s', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/ws/install/intelligent_robotics_msgs/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root', 'TERM_PROGRAM_VERSION': '1.108.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-9897f699-1c62-4676-8f61-2483c01b8ca6.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'WAYLAND_DISPLAY': 'vscode-wayland-3e56244b-52ad-49ac-9dd7-9429404528c6.sock', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/tmp/user/0', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/bb1711ff82dc5e17e4af6b5ee9b68aa5/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/user/0/vscode-git-097dc89b52.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock', 'AMENT_PREFIX_PATH': '/ws/install/intelligent_robotics_msgs:/opt/ros/jazzy', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X0', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/ws/build/vacuum1', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/ws/install/intelligent_robotics_msgs:/opt/ros/jazzy'}), 'shell': False}
+[7.390431] (vacuum1) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[7.412493] (-) TimerEvent: {}
+[7.463827] (vacuum1) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[7.487578] (vacuum1) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[7.512620] (-) TimerEvent: {}
+[7.593687] (vacuum1) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[7.606189] (vacuum1) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[7.606525] (vacuum1) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[7.607033] (vacuum1) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[7.612743] (-) TimerEvent: {}
+[7.619383] (vacuum1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.712892] (-) TimerEvent: {}
+[7.741087] (vacuum1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[7.754035] (vacuum1) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[7.754393] (vacuum1) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[7.755013] (vacuum1) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[7.758503] (vacuum1) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[7.813020] (-) TimerEvent: {}
+[7.900420] (vacuum1) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[7.913152] (-) TimerEvent: {}
+[7.991650] (vacuum1) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[8.013285] (-) TimerEvent: {}
+[8.024911] (vacuum1) StdoutLine: {'line': b'-- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[8.077632] (vacuum1) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[8.092756] (vacuum1) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[8.109514] (vacuum1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.113351] (-) TimerEvent: {}
+[8.132529] (vacuum1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.213453] (-) TimerEvent: {}
+[8.233874] (vacuum1) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[8.245704] (vacuum1) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[8.313564] (-) TimerEvent: {}
+[8.328876] (vacuum1) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[8.347082] (vacuum1) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[8.372695] (vacuum1) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.413696] (-) TimerEvent: {}
+[8.468881] (vacuum1) StdoutLine: {'line': b'-- Found intelligent_robotics_msgs: 0.0.0 (/ws/install/intelligent_robotics_msgs/share/intelligent_robotics_msgs/cmake)\n'}
+[8.484173] (vacuum1) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[8.513814] (-) TimerEvent: {}
+[8.614103] (-) TimerEvent: {}
+[8.617387] (vacuum1) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[8.617679] (vacuum1) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[8.617843] (vacuum1) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[8.618841] (vacuum1) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[8.620670] (vacuum1) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[8.620804] (vacuum1) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[8.621533] (vacuum1) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[8.623899] (vacuum1) StdoutLine: {'line': b'-- Configuring done (1.3s)\n'}
+[8.643413] (vacuum1) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[8.649650] (vacuum1) StdoutLine: {'line': b'-- Build files have been written to: /ws/build/vacuum1\n'}
+[8.658328] (vacuum1) CommandEnded: {'returncode': 0}
+[8.659394] (vacuum1) JobProgress: {'identifier': 'vacuum1', 'progress': 'build'}
+[8.659432] (vacuum1) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws/build/vacuum1', '--', '-j8', '-l8'], 'cwd': '/ws/build/vacuum1', 'env': OrderedDict({'HOSTNAME': 'kasper-ThinkPad-T480s', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/ws/install/intelligent_robotics_msgs/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root', 'TERM_PROGRAM_VERSION': '1.108.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-9897f699-1c62-4676-8f61-2483c01b8ca6.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'WAYLAND_DISPLAY': 'vscode-wayland-3e56244b-52ad-49ac-9dd7-9429404528c6.sock', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/tmp/user/0', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/bb1711ff82dc5e17e4af6b5ee9b68aa5/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/user/0/vscode-git-097dc89b52.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock', 'AMENT_PREFIX_PATH': '/ws/install/intelligent_robotics_msgs:/opt/ros/jazzy', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X0', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/ws/build/vacuum1', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/ws/install/intelligent_robotics_msgs:/opt/ros/jazzy'}), 'shell': False}
+[8.714245] (-) TimerEvent: {}
+[8.720074] (vacuum1) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/charging_station_node.dir/src/charging_station_node.cpp.o\x1b[0m\n'}
+[8.720428] (vacuum1) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/vacuum_cleaner_node.dir/src/vacuum_cleaner_node.cpp.o\x1b[0m\n'}
+[8.814387] (-) TimerEvent: {}
+[8.914655] (-) TimerEvent: {}
+[9.014927] (-) TimerEvent: {}
+[9.115206] (-) TimerEvent: {}
+[9.215471] (-) TimerEvent: {}
+[9.315758] (-) TimerEvent: {}
+[9.416040] (-) TimerEvent: {}
+[9.516243] (-) TimerEvent: {}
+[9.616529] (-) TimerEvent: {}
+[9.716822] (-) TimerEvent: {}
+[9.817109] (-) TimerEvent: {}
+[9.917364] (-) TimerEvent: {}
+[10.017658] (-) TimerEvent: {}
+[10.117946] (-) TimerEvent: {}
+[10.218235] (-) TimerEvent: {}
+[10.318536] (-) TimerEvent: {}
+[10.418832] (-) TimerEvent: {}
+[10.519117] (-) TimerEvent: {}
+[10.619400] (-) TimerEvent: {}
+[10.719691] (-) TimerEvent: {}
+[10.819992] (-) TimerEvent: {}
+[10.920273] (-) TimerEvent: {}
+[11.020572] (-) TimerEvent: {}
+[11.120879] (-) TimerEvent: {}
+[11.221205] (-) TimerEvent: {}
+[11.321531] (-) TimerEvent: {}
+[11.421828] (-) TimerEvent: {}
+[11.522129] (-) TimerEvent: {}
+[11.622379] (-) TimerEvent: {}
+[11.722683] (-) TimerEvent: {}
+[11.822985] (-) TimerEvent: {}
+[11.923251] (-) TimerEvent: {}
+[12.023553] (-) TimerEvent: {}
+[12.123853] (-) TimerEvent: {}
+[12.224158] (-) TimerEvent: {}
+[12.324417] (-) TimerEvent: {}
+[12.424730] (-) TimerEvent: {}
+[12.525031] (-) TimerEvent: {}
+[12.625290] (-) TimerEvent: {}
+[12.725593] (-) TimerEvent: {}
+[12.825903] (-) TimerEvent: {}
+[12.926209] (-) TimerEvent: {}
+[13.026486] (-) TimerEvent: {}
+[13.126768] (-) TimerEvent: {}
+[13.227057] (-) TimerEvent: {}
+[13.327310] (-) TimerEvent: {}
+[13.427582] (-) TimerEvent: {}
+[13.527861] (-) TimerEvent: {}
+[13.628174] (-) TimerEvent: {}
+[13.728467] (-) TimerEvent: {}
+[13.828734] (-) TimerEvent: {}
+[13.929026] (-) TimerEvent: {}
+[14.029243] (-) TimerEvent: {}
+[14.129525] (-) TimerEvent: {}
+[14.229816] (-) TimerEvent: {}
+[14.321847] (vacuum1) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable vacuum_cleaner_node\x1b[0m\n'}
+[14.329948] (-) TimerEvent: {}
+[14.430237] (-) TimerEvent: {}
+[14.530528] (-) TimerEvent: {}
+[14.582953] (vacuum1) StdoutLine: {'line': b'[ 75%] Built target vacuum_cleaner_node\n'}
+[14.630681] (-) TimerEvent: {}
+[14.730998] (-) TimerEvent: {}
+[14.831318] (-) TimerEvent: {}
+[14.931615] (-) TimerEvent: {}
+[15.031889] (-) TimerEvent: {}
+[15.132164] (-) TimerEvent: {}
+[15.232436] (-) TimerEvent: {}
+[15.332711] (-) TimerEvent: {}
+[15.432985] (-) TimerEvent: {}
+[15.533243] (-) TimerEvent: {}
+[15.633501] (-) TimerEvent: {}
+[15.733748] (-) TimerEvent: {}
+[15.834077] (-) TimerEvent: {}
+[15.934373] (-) TimerEvent: {}
+[16.034654] (-) TimerEvent: {}
+[16.134918] (-) TimerEvent: {}
+[16.235192] (-) TimerEvent: {}
+[16.335422] (-) TimerEvent: {}
+[16.435684] (-) TimerEvent: {}
+[16.535950] (-) TimerEvent: {}
+[16.636217] (-) TimerEvent: {}
+[16.736488] (-) TimerEvent: {}
+[16.836753] (-) TimerEvent: {}
+[16.937018] (-) TimerEvent: {}
+[17.037247] (-) TimerEvent: {}
+[17.137502] (-) TimerEvent: {}
+[17.237801] (-) TimerEvent: {}
+[17.338079] (-) TimerEvent: {}
+[17.438321] (-) TimerEvent: {}
+[17.538606] (-) TimerEvent: {}
+[17.638886] (-) TimerEvent: {}
+[17.739173] (-) TimerEvent: {}
+[17.839499] (-) TimerEvent: {}
+[17.939796] (-) TimerEvent: {}
+[17.973779] (vacuum1) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable charging_station_node\x1b[0m\n'}
+[18.039946] (-) TimerEvent: {}
+[18.140237] (-) TimerEvent: {}
+[18.240521] (-) TimerEvent: {}
+[18.327377] (vacuum1) StdoutLine: {'line': b'[100%] Built target charging_station_node\n'}
+[18.340585] (vacuum1) CommandEnded: {'returncode': 0}
+[18.340915] (-) TimerEvent: {}
+[18.341342] (vacuum1) JobProgress: {'identifier': 'vacuum1', 'progress': 'install'}
+[18.341911] (vacuum1) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ws/build/vacuum1'], 'cwd': '/ws/build/vacuum1', 'env': OrderedDict({'HOSTNAME': 'kasper-ThinkPad-T480s', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/ws/install/intelligent_robotics_msgs/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root', 'TERM_PROGRAM_VERSION': '1.108.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-9897f699-1c62-4676-8f61-2483c01b8ca6.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'WAYLAND_DISPLAY': 'vscode-wayland-3e56244b-52ad-49ac-9dd7-9429404528c6.sock', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/tmp/user/0', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/bb1711ff82dc5e17e4af6b5ee9b68aa5/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/user/0/vscode-git-097dc89b52.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-6d8b4558-dca9-4780-b932-7388f8f9e34d.sock', 'AMENT_PREFIX_PATH': '/ws/install/intelligent_robotics_msgs:/opt/ros/jazzy', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X0', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/ws/build/vacuum1', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/ws/install/intelligent_robotics_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/ws/install/intelligent_robotics_msgs:/opt/ros/jazzy'}), 'shell': False}
+[18.351180] (vacuum1) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.351807] (vacuum1) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[18.352338] (vacuum1) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum1/lib/vacuum1/charging_station_node\n'}
+[18.363418] (vacuum1) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum1/lib/vacuum1/vacuum_cleaner_node\n'}
+[18.374360] (vacuum1) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum1/share/ament_index/resource_index/package_run_dependencies/vacuum1\n'}
+[18.385277] (vacuum1) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum1/share/ament_index/resource_index/parent_prefix_path/vacuum1\n'}
+[18.395468] (vacuum1) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum1/share/vacuum1/environment/ament_prefix_path.sh\n'}
+[18.406172] (vacuum1) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum1/share/vacuum1/environment/ament_prefix_path.dsv\n'}
+[18.416565] (vacuum1) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum1/share/vacuum1/environment/path.sh\n'}
+[18.426906] (vacuum1) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum1/share/vacuum1/environment/path.dsv\n'}
+[18.437250] (vacuum1) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum1/share/vacuum1/local_setup.bash\n'}
+[18.441035] (-) TimerEvent: {}
+[18.447542] (vacuum1) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum1/share/vacuum1/local_setup.sh\n'}
+[18.459015] (vacuum1) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum1/share/vacuum1/local_setup.zsh\n'}
+[18.469613] (vacuum1) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum1/share/vacuum1/local_setup.dsv\n'}
+[18.480491] (vacuum1) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum1/share/vacuum1/package.dsv\n'}
+[18.491185] (vacuum1) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum1/share/ament_index/resource_index/packages/vacuum1\n'}
+[18.501739] (vacuum1) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum1/share/vacuum1/cmake/vacuum1Config.cmake\n'}
+[18.512293] (vacuum1) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum1/share/vacuum1/cmake/vacuum1Config-version.cmake\n'}
+[18.523050] (vacuum1) StdoutLine: {'line': b'-- Symlinking: /ws/install/vacuum1/share/vacuum1/package.xml\n'}
+[18.536393] (vacuum1) CommandEnded: {'returncode': 0}
+[18.541383] (-) TimerEvent: {}
+[18.551922] (vacuum1) JobEnded: {'identifier': 'vacuum1', 'rc': 0}
+[18.553042] (-) EventReactorShutdown: {}

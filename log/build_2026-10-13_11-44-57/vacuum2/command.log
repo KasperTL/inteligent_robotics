@@ -1,0 +1,4 @@
+Invoking command in '/ws/build/vacuum2': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /ws/build/vacuum2 -- -j8 -l8
+Invoked command in '/ws/build/vacuum2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /ws/build/vacuum2 -- -j8 -l8
+Invoking command in '/ws/build/vacuum2': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /ws/build/vacuum2
+Invoked command in '/ws/build/vacuum2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /ws/build/vacuum2

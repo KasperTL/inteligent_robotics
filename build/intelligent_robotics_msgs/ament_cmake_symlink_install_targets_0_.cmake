@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/ws/build/intelligent_robotics_msgs/rosidl_generator_py/intelligent_robotics_msgs/intelligent_robotics_msgs_s__rosidl_typesupport_fastrtps_c.so" "TARGETS" "intelligent_robotics_msgs_s__rosidl_typesupport_fastrtps_c" "DESTINATION" "lib/python3.12/site-packages/intelligent_robotics_msgs")

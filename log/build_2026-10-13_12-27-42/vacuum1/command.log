@@ -1,0 +1,4 @@
+Invoking command in '/ws/build/vacuum1': CMAKE_PREFIX_PATH=/ws/install/intelligent_robotics_msgs:/ws/install/vacuum2:/ws/install/vacuum1:/ws/install/exercise1:/opt/ros/jazzy /usr/bin/cmake --build /ws/build/vacuum1 -- -j8 -l8
+Invoked command in '/ws/build/vacuum1' returned '0': CMAKE_PREFIX_PATH=/ws/install/intelligent_robotics_msgs:/ws/install/vacuum2:/ws/install/vacuum1:/ws/install/exercise1:/opt/ros/jazzy /usr/bin/cmake --build /ws/build/vacuum1 -- -j8 -l8
+Invoking command in '/ws/build/vacuum1': CMAKE_PREFIX_PATH=/ws/install/intelligent_robotics_msgs:/ws/install/vacuum2:/ws/install/vacuum1:/ws/install/exercise1:/opt/ros/jazzy /usr/bin/cmake --install /ws/build/vacuum1
+Invoked command in '/ws/build/vacuum1' returned '0': CMAKE_PREFIX_PATH=/ws/install/intelligent_robotics_msgs:/ws/install/vacuum2:/ws/install/vacuum1:/ws/install/exercise1:/opt/ros/jazzy /usr/bin/cmake --install /ws/build/vacuum1

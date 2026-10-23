@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-8c534643eb42c7013caa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "vacuum1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "charging_station_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-charging_station_node-075c38dceba4a93897c2.json",
+					"name" : "charging_station_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-29cf10a43cb449cc842e.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vacuum1_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vacuum1_uninstall-90f9f63322e5f3194115.json",
+					"name" : "vacuum1_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vacuum_cleaner_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vacuum_cleaner_node-eaab63bcf62b5d1132f5.json",
+					"name" : "vacuum_cleaner_node",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/ws/build/vacuum1",
+		"source" : "/ws/src/vacuum1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

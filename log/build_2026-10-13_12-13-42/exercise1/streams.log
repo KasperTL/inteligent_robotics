@@ -1,0 +1,23 @@
+[0.018s] Invoking command in '/ws/build/exercise1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ws/build/exercise1 -- -j8 -l8
+[0.114s] [ 50%] Built target temperature_sensor_node
+[0.115s] [100%] Built target temperature_monitor_node
+[0.133s] Invoked command in '/ws/build/exercise1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ws/build/exercise1 -- -j8 -l8
+[0.135s] Invoking command in '/ws/build/exercise1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ws/build/exercise1
+[0.159s] -- Install configuration: ""
+[0.159s] -- Execute custom install script
+[0.160s] -- Up-to-date symlink: /ws/install/exercise1/share/ament_index/resource_index/package_run_dependencies/exercise1
+[0.160s] -- Up-to-date symlink: /ws/install/exercise1/share/ament_index/resource_index/parent_prefix_path/exercise1
+[0.161s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/environment/ament_prefix_path.sh
+[0.161s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/environment/ament_prefix_path.dsv
+[0.161s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/environment/path.sh
+[0.163s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/environment/path.dsv
+[0.163s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/local_setup.bash
+[0.164s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/local_setup.sh
+[0.164s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/local_setup.zsh
+[0.164s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/local_setup.dsv
+[0.164s] -- Symlinking: /ws/install/exercise1/share/exercise1/package.dsv
+[0.180s] -- Up-to-date symlink: /ws/install/exercise1/share/ament_index/resource_index/packages/exercise1
+[0.180s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/cmake/exercise1Config.cmake
+[0.180s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/cmake/exercise1Config-version.cmake
+[0.180s] -- Up-to-date symlink: /ws/install/exercise1/share/exercise1/package.xml
+[0.190s] Invoked command in '/ws/build/exercise1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ws/build/exercise1

@@ -1,0 +1,25 @@
+[0.010s] Invoking command in '/ws/build/vacuum1': CMAKE_PREFIX_PATH=/ws/install/intelligent_robotics_msgs:/ws/install/vacuum2:/ws/install/vacuum1:/ws/install/exercise1:/opt/ros/jazzy /usr/bin/cmake --build /ws/build/vacuum1 -- -j8 -l8
+[0.084s] [100%] Built target charging_station_node
+[0.084s] [100%] Built target vacuum_cleaner_node
+[0.096s] Invoked command in '/ws/build/vacuum1' returned '0': CMAKE_PREFIX_PATH=/ws/install/intelligent_robotics_msgs:/ws/install/vacuum2:/ws/install/vacuum1:/ws/install/exercise1:/opt/ros/jazzy /usr/bin/cmake --build /ws/build/vacuum1 -- -j8 -l8
+[0.098s] Invoking command in '/ws/build/vacuum1': CMAKE_PREFIX_PATH=/ws/install/intelligent_robotics_msgs:/ws/install/vacuum2:/ws/install/vacuum1:/ws/install/exercise1:/opt/ros/jazzy /usr/bin/cmake --install /ws/build/vacuum1
+[0.107s] -- Install configuration: ""
+[0.107s] -- Execute custom install script
+[0.108s] -- Up-to-date symlink: /ws/install/vacuum1/lib/vacuum1/charging_station_node
+[0.108s] -- Up-to-date symlink: /ws/install/vacuum1/lib/vacuum1/vacuum_cleaner_node
+[0.109s] -- Up-to-date symlink: /ws/install/vacuum1/share/ament_index/resource_index/package_run_dependencies/vacuum1
+[0.109s] -- Up-to-date symlink: /ws/install/vacuum1/share/ament_index/resource_index/parent_prefix_path/vacuum1
+[0.109s] -- Up-to-date symlink: /ws/install/vacuum1/share/vacuum1/environment/ament_prefix_path.sh
+[0.110s] -- Up-to-date symlink: /ws/install/vacuum1/share/vacuum1/environment/ament_prefix_path.dsv
+[0.110s] -- Up-to-date symlink: /ws/install/vacuum1/share/vacuum1/environment/path.sh
+[0.110s] -- Up-to-date symlink: /ws/install/vacuum1/share/vacuum1/environment/path.dsv
+[0.111s] -- Up-to-date symlink: /ws/install/vacuum1/share/vacuum1/local_setup.bash
+[0.111s] -- Up-to-date symlink: /ws/install/vacuum1/share/vacuum1/local_setup.sh
+[0.111s] -- Up-to-date symlink: /ws/install/vacuum1/share/vacuum1/local_setup.zsh
+[0.112s] -- Up-to-date symlink: /ws/install/vacuum1/share/vacuum1/local_setup.dsv
+[0.112s] -- Symlinking: /ws/install/vacuum1/share/vacuum1/package.dsv
+[0.123s] -- Up-to-date symlink: /ws/install/vacuum1/share/ament_index/resource_index/packages/vacuum1
+[0.123s] -- Up-to-date symlink: /ws/install/vacuum1/share/vacuum1/cmake/vacuum1Config.cmake
+[0.123s] -- Up-to-date symlink: /ws/install/vacuum1/share/vacuum1/cmake/vacuum1Config-version.cmake
+[0.123s] -- Up-to-date symlink: /ws/install/vacuum1/share/vacuum1/package.xml
+[0.126s] Invoked command in '/ws/build/vacuum1' returned '0': CMAKE_PREFIX_PATH=/ws/install/intelligent_robotics_msgs:/ws/install/vacuum2:/ws/install/vacuum1:/ws/install/exercise1:/opt/ros/jazzy /usr/bin/cmake --install /ws/build/vacuum1

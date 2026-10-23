@@ -1,0 +1,8 @@
+setup.py
+intelligent_robotics_msgs/__init__.py
+intelligent_robotics_msgs.egg-info/PKG-INFO
+intelligent_robotics_msgs.egg-info/SOURCES.txt
+intelligent_robotics_msgs.egg-info/dependency_links.txt
+intelligent_robotics_msgs.egg-info/top_level.txt
+intelligent_robotics_msgs/msg/__init__.py
+intelligent_robotics_msgs/msg/_vacuum_cleaner_status.py
