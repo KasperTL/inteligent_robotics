@@ -16,6 +16,14 @@ RUN userdel -r ubuntu 2>/dev/null || true \
  && echo "$USERNAME ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/$USERNAME \
  && chmod 0440 /etc/sudoers.d/$USERNAME
 
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      ros-jazzy-rmw-cyclonedds-cpp \
+      sudo \
+      openssh-client \
+      git \
+ && rm -rf /var/lib/apt/lists/*
+
 ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
 USER $USERNAME
