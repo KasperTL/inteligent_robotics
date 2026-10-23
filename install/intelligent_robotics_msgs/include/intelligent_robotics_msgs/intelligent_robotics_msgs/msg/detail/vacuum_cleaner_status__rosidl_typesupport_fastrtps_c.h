@@ -1,1 +1,0 @@
-/ws/build/intelligent_robotics_msgs/rosidl_typesupport_fastrtps_c/intelligent_robotics_msgs/msg/detail/vacuum_cleaner_status__rosidl_typesupport_fastrtps_c.h

@@ -1,7 +1,0 @@
-{
-  "package_name": "intelligent_robotics_msgs",
-  "output_dir": "/ws/build/intelligent_robotics_msgs/rosidl_generator_type_description/intelligent_robotics_msgs",
-  "idl_tuples": [
-    "/ws/build/intelligent_robotics_msgs/rosidl_adapter/intelligent_robotics_msgs:msg/VacuumCleanerStatus.idl"
-  ]
-}

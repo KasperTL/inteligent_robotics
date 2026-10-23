@@ -1,1 +1,0 @@
-/ws/build/intelligent_robotics_msgs/rosidl_generator_rs/intelligent_robotics_msgs/rust/src/lib.rs

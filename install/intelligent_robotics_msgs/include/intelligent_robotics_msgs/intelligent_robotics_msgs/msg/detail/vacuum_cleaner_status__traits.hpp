@@ -1,1 +1,0 @@
-/ws/build/intelligent_robotics_msgs/rosidl_generator_cpp/intelligent_robotics_msgs/msg/detail/vacuum_cleaner_status__traits.hpp

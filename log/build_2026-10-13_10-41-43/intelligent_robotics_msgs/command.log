@@ -1,6 +1,0 @@
-Invoking command in '/ws/build/intelligent_robotics_msgs': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /ws/src/intelligent_robotics_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/ws/install/intelligent_robotics_msgs
-Invoked command in '/ws/build/intelligent_robotics_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /ws/src/intelligent_robotics_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/ws/install/intelligent_robotics_msgs
-Invoking command in '/ws/build/intelligent_robotics_msgs': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /ws/build/intelligent_robotics_msgs -- -j8 -l8
-Invoked command in '/ws/build/intelligent_robotics_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /ws/build/intelligent_robotics_msgs -- -j8 -l8
-Invoking command in '/ws/build/intelligent_robotics_msgs': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /ws/build/intelligent_robotics_msgs
-Invoked command in '/ws/build/intelligent_robotics_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /ws/build/intelligent_robotics_msgs

@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/ws/build/exercise1/temperature_sensor_node" "/ws/build/exercise1/temperature_monitor_node" "TARGETS" "temperature_sensor_node" "temperature_monitor_node" "DESTINATION" "lib/exercise1")

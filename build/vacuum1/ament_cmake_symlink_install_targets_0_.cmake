@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/ws/build/vacuum1/charging_station_node" "/ws/build/vacuum1/vacuum_cleaner_node" "TARGETS" "charging_station_node" "vacuum_cleaner_node" "DESTINATION" "lib/vacuum1")
